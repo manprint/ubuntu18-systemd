@@ -6,6 +6,7 @@ Ubuntu 18.04 LTS Systemd
 - Data: Europe/Rome
 - Systemd: enabled
 - Privileged: yes
+- Utils: sudo, net-utils, ping-utils, telnet, nano, vim
 
 ## docker-compose
 

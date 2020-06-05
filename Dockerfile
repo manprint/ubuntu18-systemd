@@ -3,7 +3,8 @@ FROM jrei/systemd-ubuntu:18.04
 RUN set -xev; \
     apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y wget apt-utils tzdata locales curl nano vim && \
+    apt-get install -y sudo wget apt-utils tzdata \
+        locales curl nano vim iputils-ping net-tools telnet && \
     apt-get clean && \
     rm -rf /usr/share/doc/* /usr/share/man/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
