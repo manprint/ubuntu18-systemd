@@ -25,3 +25,8 @@ ENV LANGUAGE it_IT.UTF-8
 ENV LC_ALL it_IT.UTF-8
 
 COPY ./.bashrc /root/.bashrc
+
+RUN set -xev; \
+    echo "export LC_ALL=it_IT.UTF-8" >> /root/.bashrc; \
+    echo "export LANG=it_IT.UTF-8" >> /root/.bashrc; \
+    echo "export LANGUAGE=it_IT.UTF-8" >> /root/.bashrc
